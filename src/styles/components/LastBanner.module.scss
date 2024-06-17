@@ -1,0 +1,159 @@
+@import '../vars';
+
+section.last {
+    padding: $spacing-xxl 0;
+    background: linear-gradient(90deg, #A8753D 0%, #D89A2A 100%);
+
+    @media(max-width:640px) {
+        padding-bottom: 42rem;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: url('/img/banners/banner_fundo.png') no-repeat center;
+        background-size: cover;
+        inset: 0;
+        bottom: -1rem;
+
+        @media(max-width:640px) {
+            display: none;
+        }
+    }
+
+    .image {
+        position: absolute;
+        background: url('/img/banners/janrose_mulher_atendimento.png') no-repeat center left;
+        background-size: auto 100%;
+        inset: 0;
+        left: 51%;
+        top: -3.5rem;
+
+        @media(max-width:640px) {
+            background: url('/img/banners/janrose_mulher_mobile.png') no-repeat bottom;
+            background-size: 100% auto;
+            left: 0;
+            top: 0;
+            z-index: 0;
+            bottom: -16rem;
+        }
+
+        @media(max-width:520px) {
+            bottom: -2rem;
+        }
+    }
+    
+    .content {
+        position: relative;
+
+        @media(max-width:640px) {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 0 $spacing-xxxs;
+        }
+        .group {
+            background: #D69F5B;
+            border-radius: 56px;
+            padding: $spacing-nano;
+
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            max-width: 349px;
+            height: 59px;
+
+            @media(max-width:640px) {
+                max-width: 340px;
+                margin: 0;
+                // justify-content: center;
+                // text-align: center;
+            }
+
+            span {
+                font-family: $font-familyBold;
+                color: $color-neutral-lighter;
+
+                font-weight: $font-weight-semibold;
+            }
+        }
+
+        h2 {
+            font-size: $font-size-xxl;
+            font-family: $font-familyMedium;
+            color: $color-neutral-lighter;
+            max-width: 450px;
+
+            margin: $spacing-xxs 0;
+        }
+
+        p {
+            color: $color-neutral-lighter;
+            margin-bottom: $spacing-sm;
+            
+            b {
+                font-family: $font-familyBold;
+            }
+        }
+
+        .btn {
+            position: relative;
+            font-family: $font-familyBold;
+            color: #D89A2A;
+            padding: 1.1rem $spacing-sm;
+            background-color: $color-neutral-lighter;
+            border-radius: 56px;
+            transition: $transiton-fast;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            &::before {
+                content: '\f054';
+                background: linear-gradient(90deg, #A8753D 0%, #D89A2A 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 1rem;
+                font-family: 'Font Awesome 6 Pro';
+                display: inline-block;
+                position: absolute;
+                opacity: 0;
+                right: 1rem;
+                transition: all .1s ease 0s;
+
+                @media(max-width:640px) {
+                  padding: 1.3rem 1.2rem;
+                  width: 100%;
+
+                  display: none;
+                }
+            }
+
+            &:hover {
+                padding-right: 3.5rem;
+                background: linear-gradient(90deg, #A8753D 0%, #D89A2A 100%);
+                color: $color-neutral-lighter;
+                background-clip: unset;
+                -webkit-background-clip: unset;
+                -webkit-text-fill-color: unset;
+
+                @media(max-width:640px) {
+                    padding-right: 2rem;
+                }
+            
+            
+                &::before {
+                    opacity: 1;
+                    color: $color-neutral-lighter;
+                    background: transparent;
+                    background-clip: unset;
+                    -webkit-background-clip: unset;
+                    -webkit-text-fill-color: unset;
+                }
+            }
+            
+        }
+    }
+}

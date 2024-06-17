@@ -1,0 +1,79 @@
+@import '../vars';
+
+section.main {
+    padding: $spacing-xl 0 20rem;
+    background-color: $color-neutral-dark;
+
+    @media (max-width: 640px) {
+        padding: $spacing-xl 0 36rem;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: url('/img/banners/degrade.png') no-repeat bottom;
+        background-size: cover;
+        inset: 0;
+        z-index: 0;
+
+        @media (max-width: 640px) {
+            opacity: 0;
+        }
+    }
+
+    &.newClass {
+        .content {
+            z-index: 0;
+        }
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+
+        svg {
+            margin-bottom: $spacing-sm;
+        }
+
+        h1 {
+            b {
+                background: linear-gradient(90deg, #A8753D 0%, #D89A2A 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            @media (max-width: 640px) {
+                max-width: 320px;
+            }
+        }
+
+        p {
+            color: #F3F3F3;
+            font-size: $font-size-sl;
+            margin: $spacing-xxs 0;
+            max-width: 550px;
+
+            @media (max-width: 640px) {
+                max-width: 320px;
+            }
+        }
+    }
+
+    .image {
+        position: absolute;
+        background: url('/img/banners/janrose_woman.png') no-repeat bottom left;
+        background-size: auto 100%;
+        inset: 0;
+        left: 50%;
+
+        @media (max-width: 768px) {
+            left: 30%;
+        }
+
+        @media (max-width: 640px) {
+            background: url('/img/banners/janrose_woman_mobile.png') no-repeat center bottom;
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+@import '../vars';
+
+section.black {
+    padding: $spacing-xl 0;
+    background-color: $color-neutral-dark;
+
+    h2 {
+        font-family: $font-familyMedium;
+        font-size: $font-size-xl;
+        color: $color-neutral-lighter;
+
+        text-align: center;
+        max-width: 650px;
+        margin: 0 auto $spacing-md;
+
+        b {
+            background: linear-gradient(90deg, #A8753D 0%, #D89A2A 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .infos {
+        padding: $spacing-xl 0;
+
+        .content {
+            color: $color-neutral-lighter;
+
+            @media(max-width:640px) {
+                max-width: 400px;
+                margin: $spacing-xs auto 0;
+            }
+            
+            h3 {
+                font-family: $font-familyBold;
+                font-size: $font-size-lg;
+            }
+
+            p {
+                color: $color-neutral-lighter;
+                max-width: 340px;
+                margin: $spacing-xxxs 0 $spacing-xs;
+            }
+        }
+    }
+
+    .container {
+        padding: $spacing-xl 0;
+
+        .grid {
+            flex-direction: row-reverse;
+        }
+
+        .content {
+            color: $color-neutral-lighter;
+
+            @media(max-width:640px) {
+                max-width: 400px;
+                margin: $spacing-xs auto 0;
+            }
+
+            h3 {
+                font-family: $font-familyBold;
+                font-size: $font-size-lg;
+            }
+
+            p {
+                color: $color-neutral-lighter;
+                max-width: 340px;
+                margin: $spacing-xxxs 0 $spacing-xs;
+            }
+        }
+    }
+}

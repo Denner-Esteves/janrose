@@ -1,0 +1,160 @@
+@import '../vars.scss';
+
+section.doubts {
+    padding: $spacing-xxl 0;
+    background: linear-gradient(190deg, #F0E7DA -33.31%, #FFF 92.92%);
+    border-bottom: 4px solid #D89A2A;
+
+    h2 {
+        font-size: $font-size-xl;
+        margin-bottom: $spacing-md;
+        color: $color-neutral-dark;
+    }
+
+    h4 {
+        font-size: $font-size-xl;
+        font-family: $font-familyMedium;
+        margin: $spacing-giant 0 $spacing-xs;
+
+        b {
+            background: linear-gradient(90deg, #A8753D 0%, #D89A2A 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    ol.questions {
+        padding: 0 $spacing-xxxs;
+
+        li {
+            background-color: $color-neutral-lighter;
+            border: 1px solid #F5EEE5;
+            border-radius: 28px;
+            transition: $transiton-fast;
+            position: relative;
+            padding: 0;
+            margin-bottom: $spacing-xxs;
+
+            &:last-child {
+                border: none;
+            }
+
+            .question {
+                padding: $spacing-xxs $spacing-xs;
+                position: relative;
+                cursor: pointer;
+
+
+                span {
+                    display: flex;
+                    align-items: center;
+
+                    color: #252525;
+                    font-size: $font-size-sl;
+                    font-weight: $font-weight-regular;
+                    transition: $transiton-fast;
+                    max-width: 550px;
+                    
+                    b {
+                        background: linear-gradient(90deg, #A8753D 0%, #D89A2A 100%);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+
+                        font-size: $font-size-lg;
+                        font-family: $font-familyBold;
+                        margin-right: 10px;
+                    }
+
+                    @media(max-width:640px) {
+                        max-width: 220px;
+                    }
+                }
+
+                i {
+                    background:linear-gradient(90deg, #A8753D 0%, #D89A2A 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-size: $font-size-lg;
+                    right: 34px;
+                    margin-top: calc((#{$font-size-sl} / 2) * -1);
+                    position: absolute;
+                    top: 50%;
+
+                    &.fa-chevron-down:before {
+                        content: "\f078"
+                    }
+                }
+
+                &.active {
+                    background-color: #fff;
+
+                    .question {
+                        i.fa-chevron-down:before {
+                            content: "\f077"
+                        }
+                    }
+
+                    .response {
+                        max-height: 300px;
+                        overflow: auto;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .response {
+                transition: $transiton-fast;
+                overflow: hidden;
+                max-height: 0;
+                opacity: 0;
+
+                p {
+                    padding: $spacing-nano 3.8rem $spacing-xs;
+                    font-weight: $font-weight-regular;
+                    line-height: $line-height-distant;
+                    color: $color-neutral-medium;
+                    font-size: $font-size-sm;
+                    margin: 0;
+                }
+
+                a {
+                    font-family: $font-familyBold;
+                    text-decoration: underline;
+                }
+            }
+
+            &:hover,
+            &.active {
+                .question {
+
+                    span {
+                        color: $color-neutral-dark;
+                    }
+
+                    i {
+                        color: #AFD202;
+                    }
+                }
+            }
+
+            &.active {
+                // background-color: #fff;
+
+                .question {
+                    i.fa-chevron-down:before {
+                        content: "\f077"
+                    }
+                }
+
+                .response {
+                    max-height: 300px;
+                    overflow: auto;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

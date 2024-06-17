@@ -1,0 +1,39 @@
+@import '../vars';
+
+.timer {
+    padding: $spacing-xxxs;
+    background-color: $color-neutral-lighter;
+
+    @media(max-width:1024px) {
+        padding: $spacing-md 0;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        @media(max-width:1024px) {
+            flex-direction: column;
+        }
+
+        span {
+            font-family: $font-familyBold;
+            font-size: $font-size-lg;
+
+            background: linear-gradient(90deg, #A8753D 0%, #D89A2A 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: $font-size-lg;
+
+            @media(max-width:1024px) {
+                max-width: 300px;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@import '../vars';
+
+.footer {
+    padding: $spacing-xxs 0;
+
+    @media(max-width:640px) {
+        padding: $spacing-xl 0;
+    }
+
+    .content {
+        @media(max-width:1040px) {
+            text-align: center;
+
+            p {
+                margin: $spacing-xxs auto;
+                max-width: 450px;
+            }
+        }
+        ul {
+            li {
+                display: inline-block;
+                margin: 0 2px;
+
+                a {
+                    i {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 90px;
+                        color: $color-neutral-lighter;
+
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        background: linear-gradient(90deg, #A8753D 0%, #D89A2A 100%);
+                    }
+
+                    &:hover {
+
+                        i {
+                            color: $color-neutral-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

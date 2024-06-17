@@ -1,0 +1,131 @@
+$color-theme-primary-dark: #000000;
+$color-theme-primary-light: linear-gradient(359deg, #FFF 46.48%, #F8EFE0 123.41%);
+$color-theme-primary-medium: #E8FCF1;
+
+$color-theme-secondary-dark: linear-gradient(100deg, #A8753D 7.36%, #D89A2A 134.17%);
+// $color-theme-secondary-medium: #3AC1D4;
+// $color-theme-secondary-light: #00C5C3;
+
+$color-background-medium: linear-gradient(90deg, #A8753D 0%, #D89A2A 100%);
+$color-background-light: #D7FF0F;
+$color-hover-btn: #E5FF63;
+// $color-primary-itens: #EC7104;
+
+$color-neutral-dark: #000000;
+$color-neutral-medium: #525866;
+$color-neutral-lighter: #FFFFFF;
+// $color-neutral-light: #D6D0CC;
+// $color-neutral-ultra-lighter: #FFFFFF;
+
+@font-face {
+    font-family: 'Gotham';
+    src: local('Gotham'), url('/fonts/Gotham-Book.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'GothamBold';
+    src: local('Gotham'), url('/fonts/Gotham-Bold.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'GothamMedium';
+    src: local('Gotham'), url('/fonts/Gotham-Medium.otf') format('opentype');
+    font-weight: 500;
+}
+
+$font-family: "Gotham", sans-serif;
+$font-familyBold: 'GothamBold', sans-serif;
+$font-familyMedium: 'GothamMedium', sans-serif;
+
+$border-radius-none: 0;
+$border-radius-quarck: 2px;
+$border-radius-nano: 4px;
+$border-radius-xxxs: 8px;
+$border-radius-xxs: 10px;
+$border-radius-xs: 16px;
+$border-radius-sm: 18px;
+$border-radius-md: 20px;
+$border-radius-lg: 22px;
+$border-radius-xl: 24px;
+$border-radius-xxl: 28px;
+$border-radius-xxxl: 32px;
+$border-radius-huge: 40px;
+$border-radius-giant: 50px;
+$border-new-one:57.11px;
+$border-radius-pill: 500px;
+$border-radius-circular: 50%;
+
+$border-width-none: 0;
+$border-width-hairline: 1px;
+$border-width-thin: 2px;
+$border-width-thick: 4px;
+$border-width-heavy: 8px;
+
+$transiton-fast: all 0.2s ease-out;
+
+$shadow-level-1: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+$shadow-level-2: 0 2px 27px 0 rgba(0, 0, 0, 0.15);
+
+$spacing-quarck: 0.25rem; //4px
+$spacing-nano: 0.5rem; //8px
+$spacing-xxxs: 1rem; //16px
+$spacing-xxs: 1.5rem; //24px
+$spacing-xs: 2rem; //32px
+$spacing-sm: 2.5rem; //40px
+$spacing-md: 3rem; //48px
+$spacing-lg: 3.5rem; //56px
+$spacing-xl: 4rem; //64px
+$spacing-xxl: 5rem; //80px
+$spacing-xxxl: 6rem; //96px
+$spacing-huge: 7.5rem; //120px
+$spacing-giant: 10rem; //160px
+$spacing-jumbo: 12.5rem; //200px
+
+$spacing-fixe-quarck: 4px;
+$spacing-fixe-nano: 8px;
+$spacing-fixe-xxxs: 16px;
+$spacing-fixe-xxs: 24px;
+$spacing-fixe-xs: 32px;
+$spacing-fixe-sm: 40px;
+$spacing-fixe-md: 48px;
+$spacing-fixe-lg: 56px;
+$spacing-fixe-xl: 64px;
+$spacing-fixe-xxl: 80px;
+$spacing-fixe-xxxl: 120px;
+$spacing-fixe-huge: 160px;
+$spacing-fixe-giant: 200px;
+
+$line-height-light: 1;
+$line-height-regular: 1.2;
+$line-height-medium: 1.5;
+$line-height-distant: 1.7;
+$line-height-superdistant: 2;
+
+$font-size-xxs: 0.75rem; //12px
+$font-size-xs: 0.875rem; //14px
+$font-size-sm: 1rem; //16px
+$font-size-sl: 1.125rem; //18px
+$font-size-md: 1.25rem; //20px 
+$font-size-lg: 1.5rem; //24px
+$font-size-lga: 1.75rem; //28px
+$font-size-xl: 2rem; //32px
+$font-size-xla: 2.375rem; //38px
+$font-size-xxl: 2.5rem; //40px
+$font-size-xxxl: 3rem; //48px
+$font-size-display: 3.5rem; //56px
+
+$font-weight-thin: 100;
+$font-weight-ultra-lighter: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;
+
+$screen-sm: 640px;
+$screen-md: 1024px;
+$screen-lg: 1280px;

@@ -1,0 +1,68 @@
+@import '../vars';
+
+.width {
+    padding: $spacing-xl $spacing-xxxs $spacing-xl;
+
+    @media(max-width:640px) {
+        padding: $spacing-xl $spacing-xxxs $spacing-xxxl;
+    }
+
+    .in {
+        position: relative;
+        background-color: $color-neutral-dark;
+        max-width: 64rem;
+        margin:-19rem auto 0;
+        border-radius: $border-radius-xxxl;
+        padding: $spacing-xxxl $spacing-xxxs;
+
+        @media(max-width:640px) {
+            padding: $spacing-xl $spacing-xxxs $spacing-xxxl;
+        }
+
+        h2 {
+            font-family: $font-familyBold;
+            font-size:$font-size-sl;
+            color: $color-neutral-lighter;
+            text-transform: uppercase;
+        }
+
+        strong {
+            font-family: $font-familyMedium;
+            font-size: 42px;
+            background: linear-gradient(90deg, #A8753D 0%, #D89A2A 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        span {
+            font-family: $font-familyMedium;
+            color:$color-neutral-lighter !important;
+            font-size: $font-size-xl;
+
+            padding-bottom: $spacing-xs;
+            background:unset;
+            background-clip: unset;
+            -webkit-background-clip: unset;
+            -webkit-text-fill-color:unset;
+
+            @media(max-width:640px) {
+                padding-top: $spacing-xxxs;
+            }
+
+        }
+
+        svg {
+            position: absolute;
+            left: 49%;
+            margin-left: -50px;
+            bottom: -3.5rem;
+
+            @media(max-width:640px) {
+                left: 46%;
+                bottom: -4.2rem;
+            }
+        }
+    }
+
+}
